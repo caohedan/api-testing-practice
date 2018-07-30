@@ -24,8 +24,8 @@
       <file leaf-file-name="RestAssuredExercises5Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="276">
-              <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+            <state relative-caret-position="455">
+              <caret line="118" column="38" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="38" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -36,8 +36,8 @@
       <file leaf-file-name="RestAssuredExamplesXml.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExamplesXml.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="173">
-              <caret line="55" column="62" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="62" />
+            <state relative-caret-position="287">
+              <caret line="61" column="13" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="13" />
             </state>
           </provider>
         </entry>
@@ -66,6 +66,8 @@
       <find>1955</find>
       <find>cars/postcar</find>
       <find>find</find>
+      <find>findAll{it.country=='Japan'}.size()</find>
+      <find>en</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -558,7 +560,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK">
+  <component name="RunManager" selected="JUnit.RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -724,9 +726,9 @@
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" />
+        <item itemvalue="JUnit.RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkFourthSpeedRecordWasSetbyAnAstonMartin" />
         <item itemvalue="JUnit.RestAssuredExercises5Test.checkThirdSpeedRecordWasSetIn1955" />
       </list>
@@ -742,44 +744,44 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532917287795</updated>
-      <workItem from="1532917292442" duration="15873000" />
+      <workItem from="1532917292442" duration="16583000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 04m 50s.xml">
-      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 05m 26s.xml">
-      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 05m 57s.xml">
-      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 06m 40s.xml">
-      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 13m 59s.xml">
-      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 15h 14m 29s.xml">
-      <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 15h 14m 40s.xml">
-      <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 15h 16m 58s.xml">
-      <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 15h 17m 24s.xml">
       <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
     </history-entry>
     <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 24m 45s.xml">
       <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 26m 00s.xml">
+      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkThreeRecordsHaveBeenSetByCarsFromTheUK - 2018.07.30 at 15h 26m 43s.xml">
+      <configuration name="RestAssuredExercises5Test.checkThreeRecordsHaveBeenSetByCarsFromTheUK" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 33m 30s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 33m 58s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 34m 41s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 35m 07s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany - 2018.07.30 at 15h 35m 26s.xml">
+      <configuration name="RestAssuredExercises5Test.checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises5Test_checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz - 2018.07.30 at 15h 37m 07s.xml">
+      <configuration name="RestAssuredExercises5Test.checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="15873000" />
+    <option name="totallyTimeSpent" value="16583000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -803,8 +805,8 @@
       <window_info id="Image Layers" />
       <window_info anchor="right" id="Capture Analysis" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34848484" />
-      <window_info anchor="bottom" id="Terminal" weight="0.06926407" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.32575756" />
+      <window_info anchor="bottom" id="Terminal" weight="0.31601733" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Find" order="1" />
       <window_info anchor="right" id="Gradle" />
@@ -1039,15 +1041,15 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExamplesXml.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="173">
-          <caret line="55" column="62" selection-start-line="55" selection-start-column="27" selection-end-line="55" selection-end-column="62" />
+        <state relative-caret-position="287">
+          <caret line="61" column="13" selection-start-line="61" selection-start-column="11" selection-end-line="61" selection-end-column="13" />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises5Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="276">
-          <caret line="80" column="28" lean-forward="true" selection-start-line="80" selection-start-column="28" selection-end-line="80" selection-end-column="28" />
+        <state relative-caret-position="455">
+          <caret line="118" column="38" selection-start-line="118" selection-start-column="31" selection-end-line="118" selection-end-column="38" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>

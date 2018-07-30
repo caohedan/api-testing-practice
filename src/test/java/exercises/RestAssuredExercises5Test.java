@@ -97,7 +97,7 @@ public class RestAssuredExercises5Test {
 				get("/xml/speedrecords").
 				then().
 //				log().all().
-		body("speedRecords.car[4].@country",isOneOf("Italy","Germany"));
+		body("speedRecords.car.findAll{it.@country =='Italy'||it.@country =='Germany'}.size()",is(4));
 	}
 	
 	/*******************************************************
@@ -116,6 +116,6 @@ public class RestAssuredExercises5Test {
 				get("/xml/speedrecords").
 				then().
 //				log().all().
-		body("speedRecords.car[2].@make",endsWith("Benz"));
+		body("speedRecords.car.findAll{it.@make.grep(~/.*Benz/)}.size()",is(2));
 	}
 }
