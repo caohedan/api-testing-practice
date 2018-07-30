@@ -27,9 +27,14 @@ public class RestAssuredExercises2Test {
 			setBasePath("/api/f1").
 			build();
 	}
-    static Stream<Arguments> driverDataProvider() {
+    static Stream<Arguments> CircuitsDataProvider() {
         return Stream.of(
                 Arguments.of("monza", "Italy")
+        );
+    }
+    static Stream<Arguments> pitstopsProvider() {
+        return Stream.of(
+                Arguments.of("pitstops", 1)
         );
     }
 	/*******************************************************
@@ -40,9 +45,23 @@ public class RestAssuredExercises2Test {
 	 ******************************************************/
 
 	//todo
+
+	/*******************************************************
+	 * Use junit-jupiter-params for @ParameterizedTest that specifies for all races
+	 * (adding the first four suffices) in 2015 how many
+	 * pit stops Max Verstappen made
+	 * (race 1 = 1 pitstop, 2 = 3, 3 = 2, 4 = 2)
+	 ******************************************************/
+
+	//todo
+	/*******************************************************
+	 * Request data for a specific circuit (for Monza this
+	 * is /circuits/monza.json)
+	 * and check the country this circuit can be found in
+	 ******************************************************/
     @ParameterizedTest
-    @MethodSource("driverDataProvider")
-    public void checkCircuitsForDriver(String driverName, String permanentNumber) {
+    @MethodSource("CircuitsDataProvider")
+	public void checkCountryForCircuit(String driverName, String permanentNumber) {
 
         given().
                 spec(requestSpec).
@@ -52,29 +71,6 @@ public class RestAssuredExercises2Test {
                 then().
                 assertThat().
                 body("MRData.CircuitTable.Circuits[0].Location.country", equalTo(permanentNumber));
-    }
-	/*******************************************************
-	 * Use junit-jupiter-params for @ParameterizedTest that specifies for all races
-	 * (adding the first four suffices) in 2015 how many
-	 * pit stops Max Verstappen made
-	 * (race 1 = 1 pitstop, 2 = 3, 3 = 2, 4 = 2)
-	 ******************************************************/
-
-	//todo
-
-	/*******************************************************
-	 * Request data for a specific circuit (for Monza this
-	 * is /circuits/monza.json)
-	 * and check the country this circuit can be found in
-	 ******************************************************/
-
-	@Test
-	public void checkCountryForCircuit() {
-
-		given().
-			spec(requestSpec).
-		when().
-		then();
 	}
 
 	/*******************************************************
@@ -84,7 +80,8 @@ public class RestAssuredExercises2Test {
 	 * and verify the number of pit stops made
 	 ******************************************************/
 
-	@Test
+    @ParameterizedTest
+    @MethodSource("pitstopsProvider")
 	public void checkNumberOfPitstopsForMaxVerstappenIn2015() {
 
 		given().
