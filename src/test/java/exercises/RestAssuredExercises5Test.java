@@ -78,8 +78,8 @@ public class RestAssuredExercises5Test {
 				when().
 				get("/xml/speedrecords").
 				then().
-//				log().all().
-				body("speedRecords.car[3].@country",equalTo("UK"));
+				log().all().
+				body("speedRecords.car.findAll{it.@country=='UK'}.size()",is(3));
 	}
 	
 	/*******************************************************
