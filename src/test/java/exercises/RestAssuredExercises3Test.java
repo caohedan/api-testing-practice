@@ -44,7 +44,6 @@ public class RestAssuredExercises3Test {
 
     private static ResponseSpecification responseSpec;
 
-@BeforeAll
     static void createResponseSpecification() {
         responseSpec =
                 new ResponseSpecBuilder().
@@ -65,10 +64,17 @@ public class RestAssuredExercises3Test {
 
     private static String ninthDriverId;
 
-
     static void getNinthDriverId() {
 
-
+        ninthDriverId =
+                given().
+                        spec(requestSpec).
+                        when().
+                        get("/2016/drivers.json").
+                        then().
+                        extract().
+                        path("MRData.DriverTable.Drivers[8].driverId");
+//        System.out.println(ninthDriverId);
     }
 
     /*******************************************************
@@ -106,6 +112,9 @@ public class RestAssuredExercises3Test {
         given().
                 spec(requestSpec).
                 when().
-                then();
+                log().all().
+                get("/drivers/"+ninthDriverId+".json").
+                then().
+                body("MRData.DriverTable.Drivers[0].nationality",equalTo("German"));
     }
 }
