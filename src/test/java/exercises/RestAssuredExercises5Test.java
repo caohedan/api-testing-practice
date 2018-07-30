@@ -6,6 +6,7 @@ import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
 
 public class RestAssuredExercises5Test {
 
@@ -33,7 +34,10 @@ public class RestAssuredExercises5Test {
 		given().
 			spec(requestSpec).
 		when().
-		then();
+//				log().all().
+				get("/xml/speedrecords").
+		then().
+				body("speedRecords.car[2].year",is("1955"));
 	}
 	
 	/*******************************************************
