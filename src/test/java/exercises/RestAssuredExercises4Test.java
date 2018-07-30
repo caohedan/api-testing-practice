@@ -6,8 +6,11 @@ import org.junit.BeforeClass;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
+import java.util.concurrent.TimeUnit;
+
 import static io.restassured.RestAssured.given;
 import static org.hamcrest.CoreMatchers.is;
+import static org.hamcrest.Matchers.lessThan;
 
 public class RestAssuredExercises4Test {
 
@@ -89,14 +92,12 @@ public class RestAssuredExercises4Test {
 
     @Test
     public void checkResponseTimeFor2014CircuitList() {
-//
-//        given().
-//                spec(requestSpec).
-//                auth()
-//                .oauth2(accessToken).
-//                when().
-//                get("/payments").
-//                then().
-//                body("paymentsCount",is(4));
+        given().
+                spec(requestSpec).
+                when().
+                get("/2014/circuits.json").
+                then().
+                assertThat().
+                time(lessThan(100L), TimeUnit.MILLISECONDS);
     }
 }
