@@ -33,7 +33,6 @@ public class RestAssuredExercises1Test {
         given().
                 spec(requestSpec).
                 when().
-
                 get("/2016/drivers.json").
                 then().
                 assertThat().
