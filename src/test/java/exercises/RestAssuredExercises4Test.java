@@ -2,10 +2,12 @@ package exercises;
 
 import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
+import org.junit.BeforeClass;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
 
 public class RestAssuredExercises4Test {
 
@@ -39,9 +41,20 @@ public class RestAssuredExercises4Test {
      ******************************************************/
 
     private static String accessToken;
-
+@BeforeClass
     public static void retrieveOAuthToken() {
-
+        accessToken =
+                given().
+                        spec(requestSpec).
+                        auth().
+                        preemptive().
+                        basic("oauth", "gimmeatoken").
+                        when().
+                        get("/oauth2/token").
+                        then().
+                        extract().
+                        path("access_token");
+      System.out.println(accessToken);
     }
 
     /*******************************************************
@@ -56,10 +69,15 @@ public class RestAssuredExercises4Test {
     @Test
     public void checkNumberOfPayments() {
 
+
         given().
                 spec(requestSpec).
+                auth()
+                .oauth2(accessToken).
                 when().
-                then();
+                get("/payments").
+                then().
+                body("paymentsCount",is(4));
     }
 
     /*******************************************************
@@ -71,10 +89,14 @@ public class RestAssuredExercises4Test {
 
     @Test
     public void checkResponseTimeFor2014CircuitList() {
-
-        given().
-                spec(requestSpec).
-                when().
-                then();
+//
+//        given().
+//                spec(requestSpec).
+//                auth()
+//                .oauth2(accessToken).
+//                when().
+//                get("/payments").
+//                then().
+//                body("paymentsCount",is(4));
     }
 }
