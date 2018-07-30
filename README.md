@@ -21,3 +21,4 @@ In our execrcises, you have complete the test practice due to the comments in te
 
 **Tips**
 You can search the url which should be tested by IDE global search, it will be found in files of Resource folder.
+http://www.baeldung.com/rest-assured-tutorial
