@@ -4,10 +4,14 @@ import io.restassured.builder.RequestSpecBuilder;
 import io.restassured.specification.RequestSpecification;
 import org.junit.jupiter.api.BeforeAll;
 import org.junit.jupiter.api.Test;
+import org.mockito.internal.matchers.EndsWith;
 
+import static com.sun.javafx.fxml.expression.Expression.or;
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.endsWith;
 import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
+import static org.hamcrest.Matchers.isOneOf;
 
 public class RestAssuredExercises5Test {
 
@@ -87,11 +91,13 @@ public class RestAssuredExercises5Test {
 	
 	@Test
 	public void checkFourRecordsHaveBeenSetByCarsFromEitherItalyOrGermany() {
-		
 		given().
-			spec(requestSpec).
-		when().
-		then();
+				spec(requestSpec).
+				when().
+				get("/xml/speedrecords").
+				then().
+//				log().all().
+		body("speedRecords.car[4].@country",isOneOf("Italy","Germany"));
 	}
 	
 	/*******************************************************
@@ -103,10 +109,13 @@ public class RestAssuredExercises5Test {
 	
 	@Test
 	public void checkTwoRecordsHaveBeenSetByCarsWhoseMakeEndOnBenz() {
-		
+
 		given().
-			spec(requestSpec).
-		when().
-		then();
+				spec(requestSpec).
+				when().
+				get("/xml/speedrecords").
+				then().
+//				log().all().
+		body("speedRecords.car[2].@make",endsWith("Benz"));
 	}
 }
