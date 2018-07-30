@@ -11,6 +11,7 @@ import org.junit.jupiter.params.provider.MethodSource;
 import java.util.stream.Stream;
 
 import static io.restassured.RestAssured.given;
+import static org.hamcrest.CoreMatchers.is;
 import static org.hamcrest.Matchers.equalTo;
 
 
@@ -34,7 +35,10 @@ public class RestAssuredExercises2Test {
     }
     static Stream<Arguments> pitstopsProvider() {
         return Stream.of(
-                Arguments.of("pitstops", 1)
+                Arguments.of("1", 1),
+                Arguments.of("2", 3),
+                Arguments.of("3", 2),
+                Arguments.of("4", 2)
         );
     }
 	/*******************************************************
@@ -82,11 +86,15 @@ public class RestAssuredExercises2Test {
 
     @ParameterizedTest
     @MethodSource("pitstopsProvider")
-	public void checkNumberOfPitstopsForMaxVerstappenIn2015() {
-
-		given().
-			spec(requestSpec).
-		when().
-		then();
+	public void checkNumberOfPitstopsForMaxVerstappenIn2015(String driverName, Integer permanentNumber) {
+        given().
+                spec(requestSpec).
+                pathParam("driver", driverName).
+                when().
+                log().all().
+                get("/2015/{driver}/drivers/max_verstappen/pitstops.json").
+                then().
+                assertThat().
+                body("MRData.RaceTable.Races[0].PitStops.size()", is(permanentNumber));
 	}
 }
