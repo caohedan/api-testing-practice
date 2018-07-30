@@ -71,8 +71,11 @@ public class RestAssuredExercises5Test {
 		
 		given().
 			spec(requestSpec).
-		when().
-		then();
+				when().
+				get("/xml/speedrecords").
+				then().
+//				log().all().
+				body("speedRecords.car[3].@country",equalTo("UK"));
 	}
 	
 	/*******************************************************
