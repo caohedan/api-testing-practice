@@ -24,8 +24,8 @@
       <file leaf-file-name="RestAssuredExercises1Test.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises1Test.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="475">
-              <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+            <state relative-caret-position="456">
+              <caret line="131" column="21" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
             </state>
           </provider>
         </entry>
@@ -61,7 +61,7 @@
         <entry file="file://$PROJECT_DIR$/src/test/java/show/SetUpTest.java">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="170">
-              <caret line="35" column="36" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="36" />
+              <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
             </state>
           </provider>
         </entry>
@@ -549,7 +549,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="JUnit.RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014">
+  <component name="RunManager" selected="JUnit.RestAssuredExercises1Test.checkThereWasNoRaceAtNurburgringIn2014">
     <configuration default="true" type="Application" factoryName="Application">
       <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$" />
     </configuration>
@@ -567,29 +567,6 @@
       <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises1Test" />
       <option name="METHOD_NAME" />
       <option name="TEST_OBJECT" value="class" />
-      <option name="VM_PARAMETERS" value="-ea" />
-      <option name="PARAMETERS" />
-      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
-      <option name="PASS_PARENT_ENVS" value="true" />
-      <option name="TEST_SEARCH_SCOPE">
-        <value defaultName="singleModule" />
-      </option>
-      <patterns />
-    </configuration>
-    <configuration name="RestAssuredExercises1Test.checkResponseContentTypeJson" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="api-testing-practice_test" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="exercises.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
-      <option name="ALTERNATIVE_JRE_PATH" />
-      <option name="PACKAGE_NAME" value="exercises" />
-      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises1Test" />
-      <option name="METHOD_NAME" value="checkResponseContentTypeJson" />
-      <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
       <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
@@ -635,6 +612,29 @@
       <option name="PACKAGE_NAME" value="exercises" />
       <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises1Test" />
       <option name="METHOD_NAME" value="checkThereWasARaceAtSilverstoneIn2014" />
+      <option name="TEST_OBJECT" value="method" />
+      <option name="VM_PARAMETERS" value="-ea" />
+      <option name="PARAMETERS" />
+      <option name="WORKING_DIRECTORY" value="%MODULE_WORKING_DIR%" />
+      <option name="PASS_PARENT_ENVS" value="true" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="singleModule" />
+      </option>
+      <patterns />
+    </configuration>
+    <configuration name="RestAssuredExercises1Test.checkThereWasNoRaceAtNurburgringIn2014" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="api-testing-practice_test" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="exercises.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="false" />
+      <option name="ALTERNATIVE_JRE_PATH" />
+      <option name="PACKAGE_NAME" value="exercises" />
+      <option name="MAIN_CLASS_NAME" value="exercises.RestAssuredExercises1Test" />
+      <option name="METHOD_NAME" value="checkThereWasNoRaceAtNurburgringIn2014" />
       <option name="TEST_OBJECT" value="method" />
       <option name="VM_PARAMETERS" value="-ea" />
       <option name="PARAMETERS" />
@@ -707,19 +707,19 @@
       <listeners />
     </configuration>
     <list>
-      <item itemvalue="JUnit.RestAssuredExercises1Test.checkResponseContentTypeJson" />
       <item itemvalue="JUnit.RestAssuredExercises1Test.checkTheFirstRaceOf2014WasAtAlbertPark" />
       <item itemvalue="JUnit.RestAssuredExercises1Test" />
       <item itemvalue="JUnit.SetUpTest.first_time_test_baidu_2" />
       <item itemvalue="JUnit.RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014" />
+      <item itemvalue="JUnit.RestAssuredExercises1Test.checkThereWasNoRaceAtNurburgringIn2014" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.RestAssuredExercises1Test.checkThereWasNoRaceAtNurburgringIn2014" />
         <item itemvalue="JUnit.RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014" />
         <item itemvalue="JUnit.RestAssuredExercises1Test.checkTheFirstRaceOf2014WasAtAlbertPark" />
         <item itemvalue="JUnit.SetUpTest.first_time_test_baidu_2" />
         <item itemvalue="JUnit.RestAssuredExercises1Test" />
-        <item itemvalue="JUnit.RestAssuredExercises1Test.checkResponseContentTypeJson" />
       </list>
     </recent_temporary>
   </component>
@@ -733,17 +733,11 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1532917287795</updated>
-      <workItem from="1532917292442" duration="3745000" />
+      <workItem from="1532917292442" duration="4027000" />
     </task>
     <servers />
   </component>
   <component name="TestHistory">
-    <history-entry file="RestAssuredExercises1Test_checkTheFirstRaceOf2014WasAtAlbertPark - 2018.07.30 at 11h 16m 47s.xml">
-      <configuration name="RestAssuredExercises1Test.checkTheFirstRaceOf2014WasAtAlbertPark" configurationId="JUnit" />
-    </history-entry>
-    <history-entry file="RestAssuredExercises1Test - 2018.07.30 at 11h 17m 34s.xml">
-      <configuration name="RestAssuredExercises1Test" configurationId="JUnit" />
-    </history-entry>
     <history-entry file="SetUpTest_first_time_test_baidu_2 - 2018.07.30 at 11h 17m 57s.xml">
       <configuration name="SetUpTest.first_time_test_baidu_2" configurationId="JUnit" />
     </history-entry>
@@ -768,9 +762,15 @@
     <history-entry file="RestAssuredExercises1Test_checkThereWasARaceAtSilverstoneIn2014 - 2018.07.30 at 11h 25m 47s.xml">
       <configuration name="RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014" configurationId="JUnit" />
     </history-entry>
+    <history-entry file="RestAssuredExercises1Test_checkThereWasARaceAtSilverstoneIn2014 - 2018.07.30 at 11h 26m 41s.xml">
+      <configuration name="RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014" configurationId="JUnit" />
+    </history-entry>
+    <history-entry file="RestAssuredExercises1Test_checkThereWasARaceAtSilverstoneIn2014 - 2018.07.30 at 11h 28m 04s.xml">
+      <configuration name="RestAssuredExercises1Test.checkThereWasARaceAtSilverstoneIn2014" configurationId="JUnit" />
+    </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="3745000" />
+    <option name="totallyTimeSpent" value="4027000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="6" />
@@ -786,11 +786,11 @@
       <window_info anchor="right" id="Maven Projects" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
       <window_info anchor="bottom" id="Version Control" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.33874458" />
+      <window_info anchor="bottom" id="Run" order="2" visible="true" weight="0.3225108" />
       <window_info anchor="bottom" id="Terminal" weight="0.24891774" />
       <window_info id="Capture Tool" />
       <window_info id="Designer" />
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
+      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.17857143" />
       <window_info anchor="bottom" id="Build" weight="0.4426407" />
       <window_info anchor="right" id="Database" />
       <window_info anchor="right" id="Gradle" />
@@ -870,6 +870,13 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/test/java/show/SetUpTest.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="170">
+          <caret line="35" column="22" lean-forward="true" selection-start-line="35" selection-start-column="16" selection-end-line="35" selection-end-column="22" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExamples.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1605">
@@ -877,17 +884,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/test/java/show/SetUpTest.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="170">
-          <caret line="35" column="36" selection-start-line="35" selection-start-column="22" selection-end-line="35" selection-end-column="36" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/test/java/exercises/RestAssuredExercises1Test.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="475">
-          <caret line="115" column="41" selection-start-line="115" selection-start-column="41" selection-end-line="115" selection-end-column="41" />
+        <state relative-caret-position="456">
+          <caret line="131" column="21" selection-start-line="131" selection-start-column="21" selection-end-line="131" selection-end-column="21" />
         </state>
       </provider>
     </entry>
